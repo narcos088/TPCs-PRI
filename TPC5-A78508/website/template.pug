@@ -1,0 +1,37 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4 
+            header.w3-container.w3-light-grey
+                h1= music.titulo
+            .w3-container 
+                table.w3-table.w3-all
+                    tr
+                        th Tipo
+                        td= music.tipo
+                    
+                    tr
+                        th Compositor
+                        td= music.compositor
+            br
+
+            h3 Instrumentos
+            .w3-container   
+                table.w3-table.w3-all.w3-bordered.w3-border.w3-striped
+                    tr
+                        each inst in music.instrumentos
+                            th(rowspan="2")= inst.nome
+                            td
+                                a(href="" + inst.partitura.path) Partitura [Clicar]
+                            
+                            tr
+                                if inst.partitura.voz
+                                    th Voz:
+                                    td= inst.partitura.voz
+                            
+            footer.w3-container.w3-light-grey
+                p
+                    a(href='http://localhost:4005/index')
+                        | Voltar à página principal
+                adress Gerado por BandaApp 

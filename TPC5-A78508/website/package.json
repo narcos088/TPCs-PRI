@@ -1,0 +1,16 @@
+{
+  "name": "tpc5-a78508",
+  "version": "1.0.0",
+  "description": "Serve o dataset das músicas que estão em JSON.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Fábio Araújo - A78508",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3",
+    "xml2json": "^0.11.2"
+  }
+}

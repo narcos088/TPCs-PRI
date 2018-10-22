@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <id>TPC5</id>
+        <título>Criação de um website a partir de ficheiros JSON controlado por um servdior</título>
+        <subtítulo></subtítulo>
+        <dinício>15 Outubro 2019</dinício>
+        <dfim>22 Outubro 2019</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <nome>Fábio Rafael Pereira Araújo</nome>
+            <id>78508</id>
+            <email>a78508@alunos.uminho.pt</email>
+            <website></website>
+            <foto path=""/>
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>
+            Criação de um servidor para tratar das ligações. 
+        </para>
+        <para>
+            Criação de um website com índice e consequentes páginas.
+        </para>
+        <para>
+            Para as páginas que advém do índice, procedeu-se à leitura de ficheiros JSON. 
+        </para>
+        <para>
+            Dado a inexistência de um "index.json", para o tratamento do índice, já foi necessário a leitura de todos os ficheiros JSON relativos às páginas secundárias, de modo a criar um objecto JSON que representasse a página principal, o índice.
+        </para>
+        <para>
+            A criação do objeto auxiliar que representasse o índice, foi feita no servidor.
+        </para>
+        <para>
+            Por fim este trabalho é realizado sobre um dataset relativo a uma coletânea de músicas de uma banda. 
+        </para>
+    </resumo>
+    <resultados>
+        <resultado path="https://github.com/narcos088/TPCs-PRI.git">Repositório Git: https://github.com/narcos088/TPCs-PRI.git</resultado>  
+        <resultado path="manifesto.xsl">Stylesheet do manifesto</resultado>
+        <resultado path="manifesto-tp5.xml">Código XML do manifesto</resultado>
+    </resultados>
+</manifesto>
