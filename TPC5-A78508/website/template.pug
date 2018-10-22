@@ -14,6 +14,10 @@ block corpo
                     tr
                         th Compositor
                         td= music.compositor
+                    
+                    if music.arranjo
+                        th Arranjo
+                        td= music.arranjo
             br
 
             h3 Instrumentos
@@ -21,7 +25,7 @@ block corpo
                 table.w3-table.w3-all.w3-bordered.w3-border.w3-striped
                     tr
                         each inst in music.instrumentos
-                            th(rowspan="2")= inst.nome
+                            th(rowspan="4")= inst.nome
                             td
                                 a(href="" + inst.partitura.path) Partitura [Clicar]
                             
@@ -29,6 +33,14 @@ block corpo
                                 if inst.partitura.voz
                                     th Voz:
                                     td= inst.partitura.voz
+                            tr
+                                if inst.partitura.clave
+                                    th Clave:
+                                    td= inst.partitura.clave
+                            tr
+                                if inst.partitura.afinacao
+                                    th Afinação:
+                                    td= inst.partitura.afinacao
                             
             footer.w3-container.w3-light-grey
                 p
