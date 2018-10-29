@@ -1,0 +1,38 @@
+extends layout
+block content 
+    .w3-container   
+        .w3-card-4  
+            header.w3-container.w3-teal
+                h3 Tese Recebida
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Nome
+                        td= tese.nome
+                    tr
+                        th Número / Identificador 
+                        td= tese.numero
+                    tr 
+                        th Curso    
+                        td= tese.curso
+                    tr 
+                        th Instituição   
+                        td= tese.instituicao
+                    tr 
+                        th Título    
+                        td= tese.titulo
+                    tr 
+                        th Data    
+                        td= tese.data
+                    tr 
+                        th Tipo
+                        td= tese.tipo
+            br
+            div.w3-padding-32
+                    div.w3-bar.w3-border
+                        .w3-container
+                            a.w3-bar-item.w3-button.w3-light-grey.w3-border(href="http://localhost:4006/") Home
+                            a.w3-bar-item.w3-button.w3-border(href="http://localhost:4006/lista") Listar
+            br
+            footer.w3-container.w3-teal
+                address Gerado por ThesisApp

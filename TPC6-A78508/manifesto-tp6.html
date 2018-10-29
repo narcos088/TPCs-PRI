@@ -1,0 +1,99 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   </head>
+   <body>
+      <div class="w3-bar w3-black"><button class="w3-bar-item w3-button" onclick="openTopico('info')">Informação Geral</button><button class="w3-bar-item w3-button" onclick="openTopico('equipa')">Equipa</button><button class="w3-bar-item w3-button" onclick="openTopico('resumo')">Resumo</button><button class="w3-bar-item w3-button" onclick="openTopico('resultados')">Resultados</button></div>
+      <div class="w3-container">
+         
+         <div id="info" class="topico">
+            <p>
+               <h1>TPC6</h1><br><b>Título:</b>Criação de um website para registo de teses<br><b>Subtítulo:</b><br><b>Data de Início:</b>22 Outubro 2019<br><b>Data de Fim:</b>29 Outubro 2019
+               
+               
+               
+               
+               
+               
+               <p><b>Supervisor:</b><a href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</a> ::
+                  <a href="mailto:jcr@di.uminho.pt">
+                     Enviar Correio
+                     </a></p>
+               
+            </p>
+         </div>
+         
+         <div id="equipa" class="topico" style="display:none">
+            <p>
+               <h1>Equipa</h1>
+               <div class="w3-container">
+                  <table class="w3-table w3-striped">
+                     <thead>
+                        <tr class="w3-light-grey">
+                           <th></th>
+                           <th>Identificador</th>
+                           <th>Nome</th>
+                           <th>Email</th>
+                           <th>Website</th>
+                        </tr>
+                     </thead>
+                     
+                     <tr>
+                        <td style="vertical-align: middle"><img src="88.jpg" class="w3-image w3-circle" style="width:175px"></td>
+                        <td style="vertical-align: middle">78508</td>
+                        <td style="vertical-align: middle">Fábio Rafael Pereira Araújo</td>
+                        <td style="vertical-align: middle"><a href="mailto:a78508@alunos.uminho.pt">a78508@alunos.uminho.pt</a></td>
+                        <td style="vertical-align: middle"><a href="">Website</a></td>
+                     </tr>
+                     
+                  </table>
+               </div>
+            </p>
+         </div>
+         
+         <div id="resumo" class="topico" style="display:none">
+            <h1>Resumo</h1>
+            
+            <p>
+               Criação de um servidor para tratar os <i>get's</i> e <i>post's</i> de páginas. 
+               
+            </p>
+            
+            <p>
+               Criação das seguintes páginas: <i>home</i>; página de registo; página de sucesso do registo; páginas de erro; página da listagem
+               dos registos.
+               
+            </p>
+            
+            <p>
+               Para o registo das teses, procedeu-se à criação de um ficheiro JSON, onde as mesmas
+               serão guardadas. 
+               
+            </p>
+            
+         </div>
+         
+         <div id="resultados" class="topico" style="display:none">
+            <h1>Resultados</h1>
+            
+            <p><a href="https://github.com/narcos088/TPCs-PRI.git">Repositório Git: https://github.com/narcos088/TPCs-PRI.git</a></p>  
+            
+            <p><a href="manifesto.xsl">Stylesheet do manifesto</a></p>
+            
+            <p><a href="manifesto-tp6.xml">Código XML do manifesto</a></p>
+            
+         </div>
+         
+      </div>
+   </body><script language="javascript">
+            function openTopico(topicName) {
+                var i;
+                var x = document.getElementsByClassName("topico");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; 
+                }
+                document.getElementById(topicName).style.display = "block"; 
+            }
+            </script></html>

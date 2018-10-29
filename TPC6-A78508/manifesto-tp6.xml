@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <id>TPC6</id>
+        <título>Criação de um website para registo de teses</título>
+        <subtítulo></subtítulo>
+        <dinício>22 Outubro 2019</dinício>
+        <dfim>29 Outubro 2019</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <foto path="88.jpg"/>
+            <nome>Fábio Rafael Pereira Araújo</nome>
+            <id>78508</id>
+            <email>a78508@alunos.uminho.pt</email>
+            <website></website>
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>
+            Criação de um servidor para tratar os <i>get's</i> e <i>post's</i> de páginas. 
+        </para>
+        <para>
+            Criação das seguintes páginas: <i>home</i>; página de registo; página de sucesso do registo; páginas de erro; página da listagem dos registos.
+        </para>
+        <para>
+            Para o registo das teses, procedeu-se à criação de um ficheiro JSON, onde as mesmas serão guardadas. 
+        </para>
+    </resumo>
+    <resultados>
+        <resultado path="https://github.com/narcos088/TPCs-PRI.git">Repositório Git: https://github.com/narcos088/TPCs-PRI.git</resultado>  
+        <resultado path="manifesto.xsl">Stylesheet do manifesto</resultado>
+        <resultado path="manifesto-tp6.xml">Código XML do manifesto</resultado>
+    </resultados>
+</manifesto>

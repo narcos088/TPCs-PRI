@@ -1,0 +1,51 @@
+extends layout
+block content 
+    .w3-container   
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Registo de Tese
+            form.w3-container(action='processaForm',  method='POST')
+                .w3-cell-row
+                    .w3-container.w3-cell
+                            label.w3-text-teal
+                                b Nome
+                            input.w3-input.w3-light-grey(type="text", name='nome')
+                            
+                            label.w3-text-teal
+                                b Número / Identificador
+                            input.w3-input.w3-light-grey(type="text", name='numero')
+                            
+                            label.w3-text-teal
+                                b Curso
+                            input.w3-input.w3-light-grey(type="text", name='curso')
+                            
+                            label.w3-text-teal
+                                b Instituição
+                            input.w3-input.w3-light-grey(type="text", name='instituicao')
+                            
+                    .w3-container.w3-cell
+                            label.w3-text-teal
+                                b Título
+                            input.w3-input.w3-light-grey(type="text", name='titulo')
+                            
+                            label.w3-text-teal
+                                b Data
+                            input.w3-input.w3-light-grey(type="date", name='data')
+                            
+                            label.w3-text-teal
+                                b Tipo
+                            select.w3-select(name='tipo')
+                                option(value="mestrado" selected) Mestrado
+                                option(value="doutoramento") Doutoramento    
+                br
+                .w3-container
+                    .w3-container
+                        input.w3-button.w3-blue-grey.w3-block(type="submit", value='Submeter')
+            br
+            div.w3-padding-32
+                    div.w3-bar.w3-border
+                        .w3-container
+                            a.w3-bar-item.w3-button.w3-light-grey.w3-border(href="http://localhost:4006/") Home
+                            a.w3-bar-item.w3-button.w3-border(href="http://localhost:4006/lista") Listar
+            footer.w3-container.w3-teal
+                address Gerado por ThesisApp
