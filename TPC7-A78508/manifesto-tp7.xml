@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <id>TPC7</id>
+        <título>Criação de um website para submissão de ficheiros</título>
+        <subtítulo></subtítulo>
+        <dinício>29 Outubro 2019</dinício>
+        <dfim>5 Novembro 2019</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <foto path="88.jpg"/>
+            <nome>Fábio Rafael Pereira Araújo</nome>
+            <id>78508</id>
+            <email>a78508@alunos.uminho.pt</email>
+            <website></website>
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>
+            Criação de um site <i>single page</i> para submissão de ficheiros. 
+        </para>
+        <para>
+            Para além do formulário, a página inclui uma tabela de subsmissões efetuadas caso existam.
+        </para>
+        <para>
+            Na implementação deste site encontram-se evidenciadas a utilizção de várias ferramentas, como <i>file upload</i>, <i>express</i>, <i>midleware</i> e <i>routing</i>.  
+        </para>
+    </resumo>
+    <resultados>
+        <resultado path="https://github.com/narcos088/TPCs-PRI.git">Repositório Git: https://github.com/narcos088/TPCs-PRI.git</resultado>  
+        <resultado path="manifesto.xsl">Stylesheet do manifesto</resultado>
+        <resultado path="manifesto-tp7.xml">Código XML do manifesto</resultado>
+    </resultados>
+</manifesto>
