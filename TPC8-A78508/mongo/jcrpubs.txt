@@ -1,0 +1,5 @@
+[2]
+db.pubs.count()
+
+[3]
+db.pubs.

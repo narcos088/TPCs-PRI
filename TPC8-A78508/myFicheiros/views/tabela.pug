@@ -1,0 +1,8 @@
+tr
+    th Ficheiro
+    th Descrição  
+    each file in tabela 
+        tr 
+            td
+                a(href="/"+file.name, target="_blank")= file.name
+            td= file.descricao                        
